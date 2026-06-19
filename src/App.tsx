@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Internships from "./pages/Internships";
 import CareerAccelerator from "./pages/CareerAccelerator";
 import Domains from "./pages/Domains";
+import DomainDetails from "./pages/DomainDetails";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="internships" element={<Internships />} />
           <Route path="dcap" element={<CareerAccelerator />} />
           <Route path="domains" element={<Domains />} />
+          <Route path="domains/:id" element={<DomainDetails />} />
           <Route path="projects" element={<Projects />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
