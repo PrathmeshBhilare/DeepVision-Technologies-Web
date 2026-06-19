@@ -108,9 +108,9 @@ export default function CareerAccelerator() {
                  ))}
                </ul>
              </div>
-             <div className="relative border border-slate-200 bg-slate-50 p-8 rounded-sm">
-                <div className="aspect-[4/3] bg-slate-200 flex flex-col justify-center items-center text-slate-400 font-bold uppercase tracking-widest text-xs border border-slate-300">
-                  Visual Placeholder
+             <div className="relative border border-slate-200 bg-white p-2 rounded-sm shadow-sm">
+                <div className="aspect-[4/3] overflow-hidden rounded-sm bg-slate-100 flex items-center justify-center">
+                  <img src="https://i.postimg.cc/L8YZBHmw/Chat-GPT-Image-Jun-19-2026-03-11-54-PM.png" alt="Career Accelerator Outcomes" className="w-full h-full object-cover" />
                 </div>
              </div>
            </div>

@@ -1,6 +1,17 @@
-import { motion } from "motion/react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { X } from "lucide-react";
 
 export default function Domains() {
+  const [selectedDomain, setSelectedDomain] = useState<any>(null);
+  const [selectedDuration, setSelectedDuration] = useState<"1 Month" | "3 Months" | "6 Months">("3 Months");
+
+  const durationLinks = {
+    "1 Month": "https://rzp.io/rzp/cEFBakfO",
+    "3 Months": "https://rzp.io/rzp/wikwVYL",
+    "6 Months": "https://rzp.io/rzp/nNNbins"
+  };
+
   const domains = [
     {
       title: "Data Analytics",
@@ -53,7 +64,7 @@ export default function Domains() {
   ];
 
   return (
-    <div className="flex flex-col w-full bg-slate-50 min-h-screen">
+    <div className="flex flex-col w-full bg-slate-50 min-h-screen relative">
       {/* Header */}
       <section className="bg-slate-50 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,7 +84,7 @@ export default function Domains() {
             transition={{ delay: 0.1 }}
             className="text-lg text-slate-600 max-w-2xl leading-relaxed"
           >
-            Specialized training disciplines designed around high-demand industry skills.
+            Specialized training disciplines designed around high-demand industry skills. Click on a domain to apply for an internship track.
           </motion.p>
         </div>
       </section>
@@ -89,9 +100,10 @@ export default function Domains() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: (idx % 4) * 0.05 }}
-                className="bg-white border border-slate-200 rounded-sm p-8 hover:border-blue-900 shadow-sm transition-all flex flex-col h-full"
+                onClick={() => setSelectedDomain(domain)}
+                className="bg-white border border-slate-200 rounded-sm p-8 hover:border-blue-900 shadow-sm transition-all flex flex-col h-full cursor-pointer group"
               >
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{domain.title}</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-900 transition-colors">{domain.title}</h3>
                 <p className="text-sm text-slate-600 mb-6 leading-relaxed flex-grow">
                   {domain.overview}
                 </p>
@@ -123,6 +135,88 @@ export default function Domains() {
           </div>
         </div>
       </section>
+
+      {/* Application Modal */}
+      <AnimatePresence>
+        {selectedDomain && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            <motion.div 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedDomain(null)}
+              className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
+            />
+            
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              className="relative w-full max-w-lg bg-white rounded-sm shadow-2xl overflow-hidden flex flex-col"
+            >
+              {/* Modal Header */}
+              <div className="flex items-center justify-between p-6 border-b border-slate-100 bg-slate-50/50">
+                <div>
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-blue-800 mb-1">Internship Application</div>
+                  <h2 className="text-xl font-extrabold text-slate-900">{selectedDomain.title} Track</h2>
+                </div>
+                <button 
+                  onClick={() => setSelectedDomain(null)}
+                  className="p-2 text-slate-400 hover:text-slate-900 bg-white rounded-sm border border-slate-200 hover:border-slate-300 transition-colors"
+                >
+                  <X size={18} strokeWidth={2.5} />
+                </button>
+              </div>
+
+              {/* Modal Body */}
+              <div className="p-6">
+                <h3 className="text-sm font-bold text-slate-900 mb-4 tracking-wide">Select Internship Duration</h3>
+                
+                <div className="space-y-3">
+                  {(["1 Month", "3 Months", "6 Months"] as const).map((duration) => (
+                    <label 
+                      key={duration}
+                      onClick={() => setSelectedDuration(duration)}
+                      className={`flex items-center justify-between p-4 border rounded-sm cursor-pointer transition-all ${
+                        selectedDuration === duration 
+                          ? "border-blue-900 bg-blue-50/50" 
+                          : "border-slate-200 bg-white hover:border-slate-300"
+                      }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <div className={`w-4 h-4 rounded-full border flex items-center justify-center ${
+                          selectedDuration === duration ? "border-blue-900" : "border-slate-300"
+                        }`}>
+                          {selectedDuration === duration && (
+                            <div className="w-2 h-2 rounded-full bg-blue-900" />
+                          )}
+                        </div>
+                        <span className={`font-bold text-sm ${
+                          selectedDuration === duration ? "text-blue-900" : "text-slate-700"
+                        }`}>
+                          {duration} Track
+                        </span>
+                      </div>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Modal Footer */}
+              <div className="p-6 border-t border-slate-100 bg-slate-50/50">
+                <a
+                  href={durationLinks[selectedDuration]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center py-4 bg-blue-900 text-white font-bold text-xs uppercase tracking-widest rounded-sm hover:bg-blue-800 transition-colors shadow-lg shadow-blue-900/20"
+                >
+                  Proceed to Application
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
