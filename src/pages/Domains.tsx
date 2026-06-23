@@ -1,11 +1,18 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { domainsData } from "../data/domains";
+import SEO from "../components/SEO";
 
 export default function Domains() {
 
   return (
     <div className="flex flex-col w-full bg-slate-50 min-h-screen relative">
+      <SEO 
+        title="Technology Domains | Explore Internship Tracks"
+        description="Explore our specialized technology domains including AI, Data Science, Machine Learning, Full Stack Development, and more. Choose the right internship track for your career."
+        keywords="tech domains, tech internship categories, data science internship, software development tracking, learn AI"
+        canonicalUrl="/domains"
+      />
       {/* Header */}
       <section className="bg-slate-50 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

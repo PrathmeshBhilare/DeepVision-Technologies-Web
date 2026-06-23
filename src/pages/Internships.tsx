@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function Internships() {
   const internships = [
@@ -49,6 +50,12 @@ export default function Internships() {
 
   return (
     <div className="flex flex-col w-full bg-slate-50 min-h-screen">
+      <SEO 
+        title="Internship Programs | DeepVision Technologies"
+        description="Gain practical experience. Explore our 1-month, 3-month, and 6-month internship programs to jump-start your tech career."
+        keywords="student internships, computer science internships, IT internships, software development internships"
+        canonicalUrl="/internships"
+      />
       {/* Header */}
       <section className="bg-slate-50 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center border-b border-slate-200 pb-12">

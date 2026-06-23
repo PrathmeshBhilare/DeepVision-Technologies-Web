@@ -2,6 +2,7 @@ import { useParams, Navigate } from "react-router-dom";
 import { motion } from "motion/react";
 import { domainsData } from "../data/domains";
 import { Check } from "lucide-react";
+import SEO from "../components/SEO";
 
 export default function DomainDetails() {
   const { id } = useParams();
@@ -53,6 +54,12 @@ export default function DomainDetails() {
 
   return (
     <div className="flex flex-col w-full min-h-screen bg-slate-50">
+      <SEO 
+        title={`${domain.title} Internship Track | DeepVision Technologies`}
+        description={`Apply for the ${domain.title} internship track. ${domain.overview}`}
+        keywords={`${domain.title.toLowerCase()} internship, learn ${domain.skills.join(', ')}`}
+        canonicalUrl={`/domains/${domain.id}`}
+      />
       {/* Domain Hero */}
       <section className="pt-24 pb-16 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import SEO from "../components/SEO";
 
 export default function Projects() {
   const projects = [
@@ -54,6 +55,12 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col w-full bg-slate-50 min-h-screen">
+      <SEO 
+        title="Student & Company Projects | DeepVision Technologies"
+        description="Explore the projects built by our interns and developers, ranging from data engineering pipelines to full-stack applications and AI models."
+        keywords="student projects, software development projects, technical portfolio, AI model projects"
+        canonicalUrl="/projects" // <-- Adding this line too!
+      />
       {/* Header */}
       <section className="bg-slate-50 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

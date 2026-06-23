@@ -1,9 +1,16 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function CareerAccelerator() {
   return (
     <div className="flex flex-col w-full bg-white">
+      <SEO 
+        title="DeepVision Career Advancement Program (DCAP) | Career Accelerator"
+        description="The DeepVision Career Advancement Program (DCAP) is a structured 6-month career-focused program offering mentorship, projects, and placement support."
+        keywords="DCAP, Career Advancement Program, job placement, mentorship, tech portfolio, resume building, tech career"
+        canonicalUrl="/dcap"
+      />
       {/* Header */}
       <section className="pt-20 pb-20 border-b border-slate-100 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

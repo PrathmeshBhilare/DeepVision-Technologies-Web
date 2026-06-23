@@ -1,10 +1,17 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Target, Lightbulb, Users2 } from "lucide-react";
+import SEO from "../components/SEO";
 
 export default function About() {
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="About DeepVision Technologies | Empowering Innovation"
+        description="Learn about DeepVision Technologies. We are a technology-driven organization dedicated to empowering students, professionals, startups, and businesses."
+        keywords="about DeepVision, technology company, career advancement, AI solutions, student internships"
+        canonicalUrl="/about"
+      />
       {/* Header */}
       <section className="bg-navy text-white py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
