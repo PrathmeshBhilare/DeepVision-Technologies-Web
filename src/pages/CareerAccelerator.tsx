@@ -43,7 +43,7 @@ export default function CareerAccelerator() {
               transition={{ delay: 0.2 }}
             >
                <a
-                  href="https://rzp.io/rzp/5i9MOzOL"
+                  href="https://rzp.io/rzp/x7qiQ5ja"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 bg-blue-900 text-white font-bold rounded-sm shadow-lg shadow-blue-900/20 hover:bg-blue-800 transition-colors inline-block tracking-wide"

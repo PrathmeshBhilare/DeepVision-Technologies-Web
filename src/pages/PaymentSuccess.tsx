@@ -51,10 +51,10 @@ export default function PaymentSuccess() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.2 }}
-            className="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-8 relative"
+            className="w-32 h-32 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-8 relative shadow-[0_0_50px_rgba(34,197,94,0.3)]"
           >
-            <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>
-            <CheckCircle className="w-12 h-12 text-green-400" />
+            <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20" style={{ animationDuration: '2s' }}></div>
+            <CheckCircle className="w-16 h-16 text-green-400 drop-shadow-[0_0_15px_rgba(34,197,94,0.5)]" />
           </motion.div>
 
           <motion.div

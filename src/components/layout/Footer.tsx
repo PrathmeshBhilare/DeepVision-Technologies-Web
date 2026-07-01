@@ -54,6 +54,12 @@ export default function Footer() {
                   com.deepvisiontechnologies@gmail.com
                 </a>
               </li>
+              <li className="flex items-start gap-3">
+                <MapPin size={16} className="text-blue-500 mt-1 flex-shrink-0" />
+                <span className="text-slate-400 leading-relaxed">
+                  Satara , Maharashtra ,India 415001
+                </span>
+              </li>
             </ul>
           </div>
         </div>
