@@ -1,0 +1,716 @@
+[
+  {
+    "id": 1,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "Who developed the Python programming language?",
+    "options": [
+      "Wick van Rossum",
+      "Rasmus Lerdorf",
+      "Guido van Rossum",
+      "Dennis Ritchie"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 2,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "Which of the following is the correct extension for a Python file?",
+    "options": [
+      ".python",
+      ".pl",
+      ".py",
+      ".pt"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "How is a code block indicated in Python?",
+    "options": [
+      "Brackets",
+      "Indentation",
+      "Parentheses",
+      "Semicolons"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "Is Python case-sensitive when dealing with identifiers?",
+    "options": [
+      "No",
+      "Yes",
+      "Depends on the operating system",
+      "Only for function names"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 5,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "What is the maximum possible length of an identifier in Python?",
+    "options": [
+      "31 characters",
+      "63 characters",
+      "79 characters",
+      "No fixed length"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 6,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "Which keyword is used to create a single-line comment in Python?",
+    "options": [
+      "//",
+      "/*",
+      "#",
+      "<!--"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 7,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "Which of the following functions can display the type of a variable?",
+    "options": [
+      "typeof()",
+      "type()",
+      "check()",
+      "datatype()"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 8,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "What is the default data type returned by the input() function?",
+    "options": [
+      "int",
+      "float",
+      "string",
+      "bool"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 9,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "Which of the following is NOT a core built-in data type in Python?",
+    "options": [
+      "List",
+      "Tuple",
+      "Class",
+      "Dictionary"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 10,
+    "type": "mcq",
+    "category": "Python Basics",
+    "difficulty": "Easy",
+    "question": "What does the pass statement do in Python?",
+    "options": [
+      "Exits the loop",
+      "Skips the current iteration",
+      "Does nothing (acts as a placeholder)",
+      "Returns True"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 11,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Medium",
+    "question": "What is the output of the expression print(4 + 3 % 5)?",
+    "options": [
+      "7",
+      "2",
+      "1",
+      "4"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 12,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Easy",
+    "question": "Which operator is used for calculating a remainder in division?",
+    "options": [
+      "/",
+      "//",
+      "%",
+      "*"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 13,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Medium",
+    "question": "What is the difference between / and // operators?",
+    "options": [
+      "/ is for division, // is for multiplication",
+      "/ returns float division, // returns integer floor division",
+      "/ returns floor division, // returns float division",
+      "Both perform the exact same operation"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 14,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Hard",
+    "question": "What is the output of the expression print(2 ** 3 ** 2)?",
+    "options": [
+      "64",
+      "512",
+      "81",
+      "32"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 15,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Hard",
+    "question": "What will be the output of print(0.1 + 0.2 == 0.3)?",
+    "options": [
+      "True",
+      "False",
+      "Error",
+      "Machine-dependent"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 16,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Medium",
+    "question": "What is the output of the evaluation print(3 < 4 < 5)?",
+    "options": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 17,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Easy",
+    "question": "Which operator cannot be used with string operands?",
+    "options": [
+      "+",
+      "*",
+      "-",
+      "All of the mentioned"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 18,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Easy",
+    "question": "What is the output of print(\"Python\" * 2)?",
+    "options": [
+      "PythonPython",
+      "Python 2",
+      "Error",
+      "None"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 19,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Medium",
+    "question": "Which method can overload the == operator behavior in a class?",
+    "options": [
+      "__init__",
+      "__str__",
+      "__eq__",
+      "__match__"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 20,
+    "type": "mcq",
+    "category": "Operators",
+    "difficulty": "Easy",
+    "question": "What is the output of bool([])?",
+    "options": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 21,
+    "type": "mcq",
+    "category": "Control Flow",
+    "difficulty": "Easy",
+    "question": "Which loop structure is NOT natively supported in Python?",
+    "options": [
+      "for",
+      "while",
+      "do-while",
+      "Nested loop"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 22,
+    "type": "mcq",
+    "category": "Control Flow",
+    "difficulty": "Easy",
+    "question": "Which keyword is used to skip the rest of the current iteration and move to the next?",
+    "options": [
+      "break",
+      "skip",
+      "next",
+      "continue"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 23,
+    "type": "mcq",
+    "category": "Control Flow",
+    "difficulty": "Easy",
+    "question": "What values are generated by the expression range(5)?",
+    "options": [
+      "1, 2, 3, 4, 5",
+      "0, 1, 2, 3, 4",
+      "0, 1, 2, 3, 4, 5",
+      "1, 2, 3, 4"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 24,
+    "type": "mcq",
+    "category": "Control Flow",
+    "difficulty": "Medium",
+    "question": "What will be the output of the following code snippet?\n\ni = 1\nwhile True:\n    if i % 3 == 0:\n        break\n    print(i, end=\" \")\n    i += 1",
+    "options": [
+      "1 2 3",
+      "1 2",
+      "1",
+      "Infinite Loop"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 25,
+    "type": "mcq",
+    "category": "Control Flow",
+    "difficulty": "Medium",
+    "question": "What happens when an else block is attached to a for loop?",
+    "options": [
+      "It executes only if the loop encounters a break.",
+      "It executes only when the loop completes naturally without a break.",
+      "It executes every single time during every iteration.",
+      "It produces a SyntaxError."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 26,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Easy",
+    "question": "Which symbol bracket is used to define a list in Python?",
+    "options": [
+      "()",
+      "[]",
+      "{}",
+      "<>"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 27,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Easy",
+    "question": "Which of the following is true about Python tuples?",
+    "options": [
+      "They are mutable",
+      "They use square brackets",
+      "They are immutable",
+      "They cannot hold duplicate values"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 28,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Easy",
+    "question": "What will list(\"abc\") return?",
+    "options": [
+      "['abc']",
+      "['a', 'b', 'c']",
+      "('a', 'b', 'c')",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 29,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Medium",
+    "question": "What is the output of len(set([1, 2, 2, 3]))?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 30,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Easy",
+    "question": "How do you add an element to an existing set?",
+    "options": [
+      "append()",
+      "add()",
+      "insert()",
+      "push()"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 31,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Easy",
+    "question": "Which exception is raised when looking for a non-existent list index?",
+    "options": [
+      "KeyError",
+      "ValueError",
+      "IndexError",
+      "AttributeError"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 32,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Easy",
+    "question": "How do you retrieve a list of all keys from a dictionary named my_dict?",
+    "options": [
+      "my_dict.keys()",
+      "my_dict.get_keys()",
+      "my_dict.all_keys",
+      "keys(my_dict)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 33,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Medium",
+    "question": "What is the output of the following code?\n\na = [1, 2, 3]\nb = a\nb.append(4)\nprint(a)",
+    "options": [
+      "[1, 2, 3]",
+      "[1, 2, 3, 4]",
+      "Error",
+      "[4]"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 34,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Medium",
+    "question": "What will print(type({})) output?",
+    "options": [
+      "<class 'set'>",
+      "<class 'dict'>",
+      "<class 'tuple'>",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 35,
+    "type": "mcq",
+    "category": "Data Structures",
+    "difficulty": "Hard",
+    "question": "Which of these is an invalid syntax to construct a set?",
+    "options": [
+      "set()",
+      "{1, 2, 3}",
+      "{}",
+      "set([1, 2])"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 36,
+    "type": "mcq",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "question": "What is the index position of the first element in a Python string or list?",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "Any integer"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 37,
+    "type": "mcq",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "question": "What is the output of \"abcdef\"[1:4]?",
+    "options": [
+      "abc",
+      "bcd",
+      "bcde",
+      "cde"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 38,
+    "type": "mcq",
+    "category": "Strings",
+    "difficulty": "Medium",
+    "question": "How do you reverse a string s using slicing?",
+    "options": [
+      "s[1:-1]",
+      "s[::-1]",
+      "s[-1:1]",
+      "s[reverse]"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 39,
+    "type": "mcq",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "question": "What does the string method strip() do?",
+    "options": [
+      "Splits the string into a list",
+      "Converts text to lowercase",
+      "Removes leading and trailing whitespaces",
+      "Counts characters"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 40,
+    "type": "mcq",
+    "category": "Strings",
+    "difficulty": "Easy",
+    "question": "What is the output of print(\"abc\".replace(\"a\", \"z\"))?",
+    "options": [
+      "abc",
+      "zbc",
+      "azc",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 41,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Medium",
+    "question": "Which keyword is used to define an inline anonymous function?",
+    "options": [
+      "def",
+      "inline",
+      "anonymous",
+      "lambda"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 42,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Medium",
+    "question": "What is the purpose of *args in a function definition?",
+    "options": [
+      "To pass a variable number of positional arguments",
+      "To pass a variable number of keyword arguments",
+      "To indicate a pointer target",
+      "To enforce integer parameters"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 43,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Medium",
+    "question": "What does **kwargs collect inside a function?",
+    "options": [
+      "Lists",
+      "Keyword arguments as a dictionary",
+      "Positional tuples",
+      "Set arguments"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 44,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Medium",
+    "question": "What built-in function returns a tuple pairing an index with its list value?",
+    "options": [
+      "zip()",
+      "mapping()",
+      "enumerate()",
+      "index_val()"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 45,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Easy",
+    "question": "Which module provides support for regular expressions in Python?",
+    "options": [
+      "regex",
+      "re",
+      "expression",
+      "string"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 46,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Hard",
+    "question": "What keyword is used to pull elements from a generator function step-by-step?",
+    "options": [
+      "return",
+      "yield",
+      "send",
+      "next"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 47,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Medium",
+    "question": "Which statement is true about Python memory management?",
+    "options": [
+      "Users must manually allocate and free memory.",
+      "It uses automatic reference counting and a garbage collector.",
+      "It does not support dynamically sized objects.",
+      "Memory is cleared only when the system reboots."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 48,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between is and ==?",
+    "options": [
+      "There is no difference.",
+      "is compares values, == compares identity.",
+      "is compares object identity (memory location), == compares values.",
+      "is works only on strings, == works on numbers."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 49,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Medium",
+    "question": "Which block handles clean-up actions that must execute regardless of an exception?",
+    "options": [
+      "except",
+      "catch",
+      "try",
+      "finally"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 50,
+    "type": "mcq",
+    "category": "Functions",
+    "difficulty": "Medium",
+    "question": "What does the with statement ensure when dealing with file objects?",
+    "options": [
+      "High-speed reading",
+      "File encryption",
+      "Automatic closing of resources even if exceptions occur",
+      "File conversion to JSON"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 51,
+    "type": "coding",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Write a Python function named `reverse_string(s)` that takes a string `s` and returns the reversed string."
+  },
+  {
+    "id": 52,
+    "type": "coding",
+    "category": "SQL",
+    "difficulty": "Hard",
+    "question": "Write a SQL query to find the second highest salary from an Employee table. The table has columns: Id, Salary."
+  }
+]

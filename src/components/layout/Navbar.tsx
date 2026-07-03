@@ -62,6 +62,12 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            <a
+              href="/assessment/index.html"
+              className="transition-colors hover:text-blue-900 font-medium text-slate-600"
+            >
+              Assessment
+            </a>
             <Link
               to="/contact"
               className="px-6 py-2.5 bg-blue-900 text-white text-sm font-semibold hover:bg-blue-800 transition-all rounded-sm flex items-center gap-2"
@@ -101,6 +107,12 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
+              <a
+                href="/assessment/index.html"
+                className="text-base font-medium py-2 border-b border-slate-50 text-slate-600"
+              >
+                Assessment
+              </a>
               <Link
                 to="/contact"
                 className="text-base font-bold py-2 text-blue-900 flex items-center gap-2"

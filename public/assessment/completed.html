@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepVision Technologies | Assessment Completed</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header text-center">
+            <h1>DeepVision Technologies</h1>
+            <p>Assessment Completed</p>
+        </header>
+
+        <main class="card form-container text-center" style="padding: 4rem 2rem;">
+            <div style="margin-bottom: 2rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h2 style="color: var(--primary-dark); margin-bottom: 1.5rem;">Thank you for completing the assessment!</h2>
+            <p style="color: var(--gray-600); font-size: 1.125rem; line-height: 1.6; margin-bottom: 2rem;">
+                Your responses have been recorded successfully. We will review your submission and contact you via email within <strong>24 hours</strong> for the next steps, if you meet our requirements.
+            </p>
+            <div class="form-actions">
+                <button class="btn btn-primary" onclick="window.location.href='/'">Return to Main Website</button>
+            </div>
+        </main>
+    </div>
+    
+    <footer style="text-align: center; padding: 2rem; color: #64748b; font-size: 0.875rem;">
+        DeepVision Technologies, Satara, Maharashtra, India 415001
+    </footer>
+    
+    <script>
+        // Prevent right click, etc.
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('copy', event => event.preventDefault());
+        
+        // Clear state
+        localStorage.removeItem('assessment_state');
+    </script>
+</body>
+</html>

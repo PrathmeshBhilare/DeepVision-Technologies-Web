@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepVision Technologies | Assessment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="timer-bar">
+        <div class="brand"><strong>DeepVision</strong> Assessment</div>
+        <div class="timer" id="timer-display">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span id="time-left">60:00</span>
+        </div>
+        <button class="btn btn-primary" id="btn-submit-test">Submit Test</button>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <div class="container assessment-layout">
+        <!-- Main Question Area -->
+        <main class="card question-area" id="question-area">
+            <div class="question-header">
+                <h3 id="q-number">Question 1</h3>
+                <div class="question-meta">
+                    <span class="badge badge-category" id="q-category">Category</span>
+                    <span class="badge badge-difficulty" id="q-difficulty">Difficulty</span>
+                </div>
+            </div>
+            
+            <div class="question-text" id="q-text">
+                Loading question...
+            </div>
+            
+            <div class="options-list" id="options-container">
+                <!-- Options injected via JS -->
+            </div>
+
+            <div class="coding-area" id="coding-container" style="display: none;">
+                <textarea id="coding-textarea" class="coding-input" placeholder="Write your code here..." spellcheck="false"></textarea>
+            </div>
+            
+            <div class="question-actions">
+                <div class="action-group">
+                    <button class="btn btn-secondary" id="btn-prev">Previous</button>
+                    <button class="btn btn-primary" id="btn-next">Next</button>
+                </div>
+                <div class="action-group">
+                    <button class="btn btn-warning" id="btn-mark">Mark for Review</button>
+                    <button class="btn btn-secondary" id="btn-clear">Clear Response</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="card palette-card">
+            <h3>Question Palette</h3>
+            <div class="palette-grid" id="palette-grid">
+                <!-- Palette buttons injected via JS -->
+            </div>
+            
+            <div class="palette-legend">
+                <div class="legend-item">
+                    <div class="legend-color legend-not-visited"></div>
+                    <span>Not Visited</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color legend-answered"></div>
+                    <span>Answered</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color legend-not-answered"></div>
+                    <span>Not Answered</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color legend-marked"></div>
+                    <span>Marked for Review</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color legend-current"></div>
+                    <span>Current Question</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- Custom Modal -->
+    <div id="confirm-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content card">
+            <h3>Submit Assessment?</h3>
+            <p>Are you sure you want to submit the assessment? You cannot change your answers after submission.</p>
+            <div class="modal-actions" style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: flex-end;">
+                <button class="btn btn-secondary" id="btn-modal-cancel">Cancel</button>
+                <button class="btn btn-primary" id="btn-modal-confirm">Yes, Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 2rem; color: #64748b; font-size: 0.875rem;">
+        DeepVision Technologies, Satara, Maharashtra, India 415001
+    </footer>
+
+    <script src="js/timer.js"></script>
+    <script src="js/assessment.js"></script>
+</body>
+</html>
