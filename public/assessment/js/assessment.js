@@ -1,4 +1,10 @@
 // Assessment Logic
+// Prevent right click, copy, cut, paste globally on the assessment page
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('copy', event => event.preventDefault());
+document.addEventListener('cut', event => event.preventDefault());
+document.addEventListener('paste', event => event.preventDefault());
+
 const API_URL = 'data/questions.json';
 
 // State variables
